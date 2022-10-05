@@ -6,4 +6,14 @@ books = [
     "Hello Web App: Learn How to Build a Web App - Tracy Osborn",
 ]
 
+video_games = [
+    "The Legend of Zelda: Breath of the Wild",
+    "Splatoon 2",
+    "Super Mario Odyssey",
+]
+
 print("Suggested gift:  {}".format(books[2]))
+
+print("Books:")
+for book in books:
+    print("* " + book)
