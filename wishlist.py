@@ -12,8 +12,14 @@ video_games = [
     "Super Mario Odyssey",
 ]
 
-print("Suggested gift:  {}".format(books[2]))
 
-print("Books:")
-for book in books:
-    print("* " + book)
+def display_wishlist(displplay_name, wishes):
+    print(displplay_name + ":")
+    suggested_gift = wishes.pop(0)
+    print("=====>", suggested_gift, "<========")
+    for wish in wishes:
+        print("* " + wish)
+    print()
+
+display_wishlist("Books", books)
+display_wishlist("Video Games", video_games)
